@@ -1,0 +1,1312 @@
+.wishingPool {
+    position: relative;
+}
+
+.wishingPool h2, a, p, input, select, textarea, label, span {
+    font-family: 'Noto Sans TC';
+    text-decoration: none;
+    outline: none;
+}
+
+.wishingPool input:focus,
+.wishingPool select:focus,
+.wishingPool textarea:focus {
+    border-color: #ea9700;
+    box-shadow: 0 0 5px #ea9700;
+}
+
+.wishingPool .container-fluid {
+    height: 100vh;
+    background: url("../img/wishingPool.svg") no-repeat center center/cover;
+}
+
+.wishingPool .onlyWishingPool {
+    position: absolute;
+    top: 20vh;
+    left: 34vw;
+    width: 40vw;
+    pointer-events: none;
+}
+
+.wishingPool .onlyWishingPool_front {
+    position: absolute;
+    top: 20vh;
+    left: 34vw;
+    width: 40vw;
+    pointer-events: none;
+    z-index: 5;
+}
+
+.wishingPool .onlyWishingPool img,
+.wishingPool .onlyWishingPool_front img {
+    width: 100%;
+}
+
+/*=========Female animation==========*/
+.wishingPool .wishingPool_female {
+    position: fixed;
+    background: url('../img/wishingPool_female.svg') no-repeat;
+    background-size: 55%;
+    top: 37vh;
+    right: -14.5vw;
+    width: 40vw;
+    height: 70vh;
+}
+
+/*=========man animation==========*/
+.wishingPool .wishingPool_man {
+    position: fixed;
+    background: url('../img/wishingPool_man.svg') no-repeat;
+    background-size: 65%;
+    top: 41.5vh;
+    left: 3vw;
+    width: 45vw;
+    height: 70vh;
+}
+
+/*=========Coin list==========*/
+.wishingPool .box {
+    padding-bottom: 3vh;
+    margin: 14vh 0 0 4vw;
+    background-color: #F0F0CE;
+    border: 3px solid #EDC857;
+    border-radius: 10px;
+}
+
+.wishingPool .item_all {
+    width: 14vw;
+    margin: 2vh auto;
+    text-align: center;
+}
+
+.wishingPool .box .item_all .circle {
+    height: 2vw;
+    width: 2vw;
+    float: left;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.wishingPool .box .item_all p {
+    width: 10vw;
+    height: 2vw;
+    line-height: 2vw;
+    float: left;
+    margin-left: 1vw;
+    font-size: 1.2vw;
+    font-weight: 700;
+    text-align: left;
+}
+
+.wishingPool .box .item {
+    width: 14.28%;
+    float: left;
+    text-align: center;
+}
+
+.wishingPool .box img {
+    width: 70%;
+    cursor: pointer;
+}
+
+.wishingPool .box .item p {
+    font-size: 1vw;
+    font-weight: 700;
+    color: #333333;
+}
+
+/*=========Button==========*/
+.wish_list {
+    width: 100%;
+    margin-top: 30%;
+}
+
+.wishingPool .wish a {
+    display: block;
+    float: left;
+    width: 29.333333%;
+    padding: 3% 2%;
+    margin: 0 2% 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #333333;
+    background-color: #fff;
+    box-shadow: 0 3px 0 #C4C3C3;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.2vw;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.wishingPool .wish a:hover {
+    background-color: #2c82c9;
+    box-shadow: 0 3px 0 #1963a0;
+    color: #fff;
+    transition: .3s;
+}
+
+.wishingPool .makewishPopup {
+    position: relative;
+}
+
+.wishingPool .makewishPopup:before {
+    content: "";
+    background: url('../img/make_hover.svg') no-repeat center/100%;
+    position: absolute;
+    width: 13vw;
+    height: 30vh;
+    top: 2vh;
+    left: -4vw;
+    display: none;
+    transition: .5s;
+}
+
+.wishingPool .makewishPopup:hover:before {
+    display: block;
+    transition: .5s;
+}
+
+.wishingPool .achWishPopup {
+    position: relative;
+}
+
+.wishingPool .achWishPopup:before {
+    content: "";
+    background: url('../img/ach_hover.svg') no-repeat center/100%;
+    position: absolute;
+    width: 13vw;
+    height: 30vh;
+    top: 2vh;
+    display: none;
+    transition: .5s;
+    z-index: 1;
+}
+
+.wishingPool .achWishPopup:hover:before {
+    display: block;
+    transition: .5s;
+}
+
+.wishingPool .manaWish {
+    position: relative;
+}
+
+.wishingPool .manaWish:before {
+    content: "";
+    background: url('../img/mana_hover.svg') no-repeat center/100%;
+    position: absolute;
+    width: 12vw;
+    height: 30vh;
+    top: 1vh;
+    display: none;
+    transition: .5s;
+    z-index: 1;
+}
+
+.wishingPool .manaWish:hover:before {
+    display: block;
+    transition: .5s;
+}
+
+.wishingPool .box {
+    position: relative;
+}
+
+.wishingPool .box:before {
+    content: "";
+    background: url('../img/wishpool_hover.svg') no-repeat center/100%;
+    position: absolute;
+    width: 14vw;
+    height: 30vh;
+    top: 20vh;
+    left: 18vw;
+    display: none;
+    transition: .5s;
+    z-index: 1;
+}
+
+.wishingPool .box:hover:before {
+    display: block;
+    transition: .5s;
+}
+
+/*=========Makewish popup==========*/
+.wishingPool .wishingOrder {
+    width: 30%;
+    min-height: 60vh;
+    padding-bottom: 2vh;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 0 #eee;
+    position: absolute;
+    top: 14vh;
+    left: 36vw;
+    z-index: 5;
+}
+
+.wishingPool .wishingOrder h2 {
+    text-align: center;
+    padding-top: 3vh;
+    font-weight: 700;
+    font-size: 1.5vw;
+    color: #333333;
+}
+
+.wishingPool .wishingOrder .place_box {
+    width: 84%;
+    margin: 3% auto 1%;
+}
+
+.wishingPool .wishingOrder .place {
+    background-color: #E0DFDF;
+    display: inline-block;
+    width: 46%;
+    float: left;
+    padding: 2%;
+    box-sizing: border-box;
+    margin: 0 2% 0 2%;
+    display: block;
+    border: none;
+    font-weight: 700;
+    font-size: 1.1vw;
+    color: #333333;
+}
+
+.wishingPool .wishingOrder .place.region {
+    color: #333333;
+    -webkit-appearance: none;
+    background: url(../img/br_down.png) no-repeat 95% #ddd;
+    background-size: 8%;
+}
+
+.wishingPool .type_boxup, .type_boxdown {
+    margin: auto;
+}
+
+.wishingPool .type_boxup label, .type_boxdown label {
+    display: block;
+    float: left;
+    width: 22%;
+    padding: 2.5% 4%;
+    margin: 2% 1.5% 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.2vw;
+    cursor: pointer;
+}
+
+.wishingPool .wishingOrder .type_box {
+    width: 84%;
+    margin: 2% auto;
+}
+
+.wishingPool .wishingOrder .type {
+    background-color: #E0DFDF;
+    display: inline-block;
+    width: 29.333333%;
+    float: left;
+    padding: 2%;
+    box-sizing: border-box;
+    margin: 0 2% 0 2%;
+    display: block;
+    border: none;
+    font-weight: 700;
+    font-size: 1.1vw;
+    height: 5vh;
+    color: #333333;
+}
+
+.wishingPool .wishingOrder .number {
+    width: 96.33333%;
+    height: 10%;
+    margin-bottom: 1%;
+}
+
+.wishingPool .wishingOrder .member-group {
+    width: 84%;
+    margin-bottom: -1%;
+    margin: auto;
+}
+
+.wishingPool .control {
+    font-size: 18px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+    padding-left: 25px;
+    cursor: pointer;
+}
+
+.wishingPool .control input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.wishingPool .control input:checked ~ .control__indicator {
+    background: #FFA500;
+    transition: .3s;
+}
+
+.ggg {
+    background: #FFA500;
+}
+
+.wishingPool .wishingOrder .control__indicator:after {
+    position: absolute;
+    display: none;
+    content: '';
+    transition: .3s;
+}
+
+.control input:checked ~ .control__indicator:after {
+    display: block;
+    transition: .3s;
+}
+
+.member_checkbox .control__indicator:after {
+    top: 3px;
+    left: 6px;
+    width: 6px;
+    height: 9px;
+    transform: rotate(45deg);
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+}
+
+.wishingPool .control__indicator {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: #E0DFDF;
+}
+
+label.control.member_checkbox {
+    top: 1vh;
+}
+
+.wishingPool label.control {
+    font-size: 1vw;
+    padding-top: .5%;
+    margin-left: 5%;
+}
+
+.wishingPool .wishingOrder .date {
+    margin-bottom: 3%;
+    color: #333333;
+}
+
+.wishingPool .wishingOrder .message {
+    background-color: #E0DFDF;
+    border-radius: 10px;
+    margin-left: 10%;
+    width: 80%;
+    padding: 2% 5% 20% 3%;
+    box-sizing: border-box;
+    display: block;
+    border: none;
+    font-weight: 700;
+    font-size: 1.2vw;
+    color: #333333;
+    resize: none;
+    overflow-y: hidden;
+}
+
+.wishingPool .wishingOrder a.button {
+    display: block;
+    float: left;
+    width: 25%;
+    padding: 1.2vh .5vw;
+    margin: 3vh 12% 5%;
+    border-radius: 5px;
+    background-color: #E74C3C;
+    box-shadow: 0 3px 0 #C0392B;
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.2vw;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.wishingPool .wishingOrder a.button:hover,
+.wishingPool .achieveWish a.button:hover,
+.wishingPool .achDate a.button:hover,
+.wishingPool .report a.button:hover {
+    background-color: #FFA500;
+    box-shadow: 0 3px 0 #f28602;
+    transition: .3s;
+}
+
+.wishingPool .wishingOrder a.cancel {
+    float: right;
+    background-color: #acd0e6;
+    box-shadow: 0 3px 0 #97bbd0;
+}
+
+/*=========Achieve wish Popup==========*/
+.wishingPool .achieveWish {
+    width: 30%;
+    min-height: 60vh;
+    padding-bottom: 2vh;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 0 #eee;
+    position: absolute;
+    top: 14vh;
+    left: 36vw;
+    z-index: 5;
+}
+
+.wishingPool .achieveWish h2 {
+    text-align: center;
+    padding-top: 3vh;
+    font-weight: 700;
+    font-size: 1.5vw;
+    color: #333333;
+    position: relative;
+}
+
+.wishingPool .achieveWish .place_box {
+    width: 84%;
+    margin: 3% auto 1%;
+}
+
+.wishingPool .achieveWish .place {
+    background-color: #E0DFDF;
+    display: inline-block;
+    width: 46%;
+    float: left;
+    padding: 2%;
+    box-sizing: border-box;
+    margin: 0 2% 0 2%;
+    display: block;
+    border: none;
+    font-weight: 700;
+    font-size: 1.1vw;
+    color: #333333;
+}
+
+.wishingPool .type_boxup, .type_boxdown {
+    width: 84%;
+    margin: auto;
+}
+
+.wishingPool .type_boxup a, .type_boxdown a {
+    display: block;
+    float: left;
+    width: 22%;
+    padding: 2.5% 4%;
+    margin: 2% 1.5% 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.2vw;
+}
+
+.wishingPool .achieveWish .type_box {
+    width: 84%;
+    margin: 2% auto;
+}
+
+.wishingPool .achieveWish .type {
+    background-color: #E0DFDF;
+    display: inline-block;
+    width: 29.333333%;
+    float: left;
+    padding: 2%;
+    box-sizing: border-box;
+    margin: 0 2% 0 2%;
+    display: block;
+    border: none;
+    font-weight: 700;
+    font-size: 1.1vw;
+    color: #333333;
+}
+
+.wishingPool .achieveWish .number {
+    width: 96.33333%;
+    height: 10%;
+}
+
+.wishingPool .achieveWish .member-group {
+    pointer-events: none;
+}
+
+.wishingPool .achieveWish .date {
+    margin-bottom: 3%;
+}
+
+.wishingPool .achieveWish .message {
+    background-color: #E0DFDF;
+    border-radius: 10px;
+    margin-left: 10%;
+    width: 80%;
+    padding: 2% 5% 25% 3%;
+    box-sizing: border-box;
+    border: none;
+    font-weight: 700;
+    font-size: 1.2vw;
+    color: #333333;
+    resize: none;
+    overflow-y: hidden;
+}
+
+.wishingPool .achieveWish a.button {
+    display: block;
+    float: left;
+    width: 25%;
+    padding: 1.2vh .5vw;
+    margin: 3vh 12% 5%;
+    border-radius: 5px;
+    background-color: #E74C3C;
+    box-shadow: 0 3px 0 #C0392B;
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.2vw;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.wishingPool .achieveWish a.cancel {
+    float: right;
+    background-color: #acd0e6;
+    box-shadow: 0 3px 0 #97bbd0;
+}
+
+.wishingPool .achieveWish .reportButton {
+    width: 10%;
+    padding: 1vh 0;
+    border-radius: 50%;
+    background-color: #62c3ea;
+    box-shadow: 0 2px 0 #59aed1;
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1vw;
+    box-sizing: border-box;
+    float: none;
+    position: absolute;
+    top: 1.3vh;
+    right: .6vw;
+    transition: .3s;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.wishingPool .achieveWish .reportButton:hover {
+    animation: shake 1s infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(2px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(0px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(2px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        transform: translate(2px, 2px) rotate(0deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+/*===============Date Popup=============*/
+.wishingPool .achDate {
+    width: 25%;
+    height: 20vh;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 0 #eee;
+    position: absolute;
+    top: 36vh;
+    left: 38.5vw;
+    z-index: 5;
+}
+
+.wishingPool .aaa {
+    width: 75%;
+    margin: 5vh auto 0;
+}
+
+.wishingPool .achDate p {
+    display: inline-block;
+    float: left;
+    width: 9vw;
+    margin: 2.5px 1vw 0 .5vw;
+    font-weight: 700;
+    font-size: 1.5vw;
+    color: #333333;
+}
+
+.wishingPool .achDate span p {
+    display: inline-block;
+    margin: 0;
+    margin-top: 1.5px;
+    width: 2vw;
+    color: #333333;
+}
+
+.wishingPool .achDate input {
+    background-color: #E0DFDF;
+    display: block;
+    width: 25%;
+    float: left;
+    display: block;
+    border: none;
+    margin-right: .5vw;
+    font-weight: 700;
+    font-size: 1.2vw;
+}
+
+.wishingPool .achDate a.button {
+    display: block;
+    float: left;
+    width: 40%;
+    padding: 1.2vh;
+    margin: 3vh 5% 0;
+    border-radius: 5px;
+    background-color: #E74C3C;
+    box-shadow: 0 3px 0 #C0392B;
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.2vw;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.wishingPool .achDate a.cancelachDate {
+    float: right;
+    background-color: #acd0e6;
+    box-shadow: 0 3px 0 #97bbd0;
+}
+
+/*===============Report Popup=============*/
+.wishingPool .report {
+    width: 25%;
+    height: 20vh;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 0 #eee;
+    position: absolute;
+    top: 36vh;
+    left: 38.5vw;
+    z-index: 5;
+}
+
+.wishingPool .aaa {
+    width: 75%;
+    margin: 4vh auto 0;
+}
+
+.wishingPool .report .reportSelect {
+    width: 90%;
+    padding: 2%;
+    box-sizing: border-box;
+    margin: 0 2% 0 2%;
+    display: block;
+    border: none;
+    font-weight: 700;
+    font-size: 1.1vw;
+    color: #333333;
+    margin: auto;
+    color: #333333;
+    -webkit-appearance: none;
+    background: url(../img/br_down.png) no-repeat 95% #ddd;
+    background-size: 5%;
+}
+
+.wishingPool .report .button {
+    display: block;
+    float: left;
+    width: 30%;
+    padding: 1.2vh;
+    margin: 3vh 10% 0;
+    border-radius: 5px;
+    background-color: #E74C3C;
+    box-shadow: 0 3px 0 #C0392B;
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.2vw;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.wishingPool .report a.cancelReport {
+    float: right;
+    background-color: #acd0e6;
+    box-shadow: 0 3px 0 #97bbd0;
+}
+
+/*===============Hand=============*/
+.animation_container {
+    position: relative;
+    width: 22vw;
+    height: 50vh;
+    top: 40vh;
+    left: 75vw;
+}
+
+.hand {
+    position: absolute;
+    min-height: 60vmin;
+    min-width: 50vmin;
+    max-height: 60vmin;
+    max-width: 50vmin;
+    background: url("../img/hand.svg") no-repeat center center/contain;
+    z-index: 20;
+    top: 40vw;
+    right: 8vw;
+}
+
+.coin_asia_throw {
+    position: absolute;
+    opacity: 0;
+    width: .5%;
+    right: 85%;
+    bottom: 78%;
+}
+
+.coinThrow {
+    position: fixed;
+    opacity: 1;
+    width: 5%;
+    transform: scale(0.4);
+}
+
+img.coin_asia_throw {
+    width: 18%;
+}
+
+.coin_pool {
+    position: fixed;
+    width: 5%;
+    opacity: 1;
+    z-index: 1;
+    cursor: pointer;
+    animation: coinFloat .5s infinite ease-in-out;
+}
+
+.coin_pool2 {
+    position: fixed;
+    width: 5%;
+    opacity: 1;
+    z-index: 1;
+    cursor: pointer;
+    transition: .3s;
+}
+
+@keyframes coinFloat {
+    0% {
+        transform: scale(0.4) rotate(90deg) translate(0, 0px);
+    }
+    50% {
+        transform: scale(0.4) rotate(90deg) translate(50px, 0px);
+    }
+    100% {
+        transform: scale(0.4) rotate(90deg) translate(-2px, -0px);
+    }
+}
+
+/*=======For HTML & JS to add class======*/
+.coinDefault {
+    filter: brightness(110%);
+}
+
+.circleDefault {
+    background-color: #F2A2B9;
+    box-shadow: 2px 2px 0 #E04F7F;
+}
+
+.circlePDefault {
+    color: #E55A9A;
+}
+
+.circleP {
+    color: #000;
+    transition: .3s;
+}
+
+.circleChange {
+    background-color: #fff;
+    box-shadow: 2px 2px 0 #C4C3C3;
+    transition: .3s;
+}
+
+.coinChange {
+    filter: brightness(50%);
+}
+
+.aColor {
+    background-color: #E0DFDF;
+    color: #333333;
+    transition: .3s;
+}
+
+.aClick {
+    background-color: #00adc3;
+    color: #fff;
+}
+
+.hide {
+    opacity: 0;
+    display: none;
+}
+
+.show {
+    opacity: 1;
+    transition: .3s;
+    display: block;
+    animation: popAnimation .4s;
+}
+
+@keyframes popAnimation {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.disable {
+    pointer-events: none;
+}
+
+/*==========Sweetalert2===========*/
+.swal2-modal .swal2-title {
+    font-family: 'Noto Sans TC';
+    color: #333333;
+    font-size: 1.4vw;
+    font-weight: 700;
+    margin: 0.5vw 0 1.5vw;
+}
+
+.swal2-modal .swal2-styled {
+    font-family: 'Noto Sans TC';
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 3px 0 #C0392B;
+    font-size: 1.2vw;
+    font-weight: 400;
+    padding: .6vh 1.5vw !important;
+    margin-bottom: 1vw;
+    cursor: pointer;
+    outline: 0;
+}
+
+.swal2-modal {
+    top: -40px !important;
+    left: 20px !important;
+}
+
+/*========767 up setting==========*/
+@media screen and (max-width: 767px) {
+    .wishingPool .container-fluid {
+        height: 100vh;
+        background-color: #000;
+        background: url("../img/wishingPool_rwd767.svg") no-repeat bottom center/cover;
+        position: relative;
+    }
+
+    .wishingPool .wishingOrder h2, .wishingPool .achieveWish h2 {
+        padding-top: 2vh;
+        font-size: 5vw;
+    }
+
+    .wishingPool .box {
+        width: 90%;
+        margin: 15vh auto;
+    }
+
+    .wishingPool .item_all {
+        text-align: center;
+    }
+
+    .wishingPool .box .item_all .circle {
+        width: 6vw;
+        height: 6vw;
+    }
+
+    .wishingPool .box .item_all p {
+        width: 30vw;
+        height: 6vw;
+        margin-left: 8vw;
+        float: none;
+        line-height: 6vw;
+        font-size: 4vw;
+    }
+
+    .wishingPool .box .item p {
+        font-size: 3vw;
+    }
+
+    .wishingPool .wish_list {
+        width: 90%;
+        position: absolute;
+        bottom: 8vh;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .wishingPool .wish a {
+        float: left;
+        font-size: 5vw;
+    }
+
+    .wishingPool .wishingOrder {
+        width: 90%;
+        top: 15vh;
+        left: 5vw;
+        margin: auto;
+    }
+
+    .wishingPool .type_boxup label, .type_boxdown label,
+    .wishingPool .wishingOrder .place,
+    .wishingPool .wishingOrder .type,
+    .wishingPool .wishingOrder .message,
+    .wishingPool .achieveWish .place,
+    .wishingPool .achieveWish .message,
+    .wishingPool .wishingOrder a.button,
+    .wishingPool .achieveWish a.button,
+    .wishingPool .achDate a.button,
+    .wishingPool .report a.button,
+    .wishingPool .type_boxup a, .type_boxdown a,
+    .wishingPool .achieveWish .type,
+    .wishingPool .report .reportSelect {
+        font-size: 4.5vw;
+    }
+
+    .wishingPool .wishingOrder .member-group {
+        width: 100%;
+    }
+
+    .wishingPool label.control {
+        font-size: 4vw;
+        margin-left: 2%;
+        padding-top: 1.5%;
+    }
+
+    .wishingPool .control__indicator {
+        width: 18px;
+        height: 18px;
+    }
+
+    .member_checkbox .control__indicator:after {
+        width: 4px;
+    }
+
+    .wishingPool .wishingOrder .message,
+    .wishingPool .achieveWish .message {
+        padding: 2% 5% 25% 3%;
+    }
+
+    .wishingPool .achieveWish .message {
+        margin-top: 0%;
+        padding: 2% 5% 34% 3%;
+    }
+
+    .wishingPool .achieveWish {
+        width: 90%;
+        top: 15vh;
+        left: 5vw;
+        margin: auto;
+    }
+
+    .wishingPool .achDate {
+        width: 80%;
+        height: 20vh;
+        top: 40vh;
+        left: 10vw;
+        margin: auto;
+    }
+
+    .wishingPool .achDate input {
+        margin-right: 2vw;
+    }
+
+    .wishingPool .achDate p {
+        display: block;
+        text-align: center;
+        width: 28vw;
+        margin: -0.5px 1vw 0 4vw;
+        font-size: 4.3vw;
+        height: 5vw;
+        line-height: 5vw;
+    }
+
+    .wishingPool .achDate span p {
+        margin-top: -0.5px;
+    }
+
+    .wishingPool .report {
+        width: 80%;
+        height: 20vh;
+        top: 40vh;
+        left: 10vw;
+        margin: auto;
+    }
+
+    .swal2-modal .swal2-title {
+        font-size: 6vw;
+        margin: 0.5vw 0 5vw;
+    }
+
+    .swal2-modal .swal2-styled {
+        font-size: 4.5vw;
+        margin-top: 1vw;
+        margin-bottom: 2vw;
+        padding: .6vh 6vw !important;
+    }
+
+    .swal2-modal {
+        top: 15px !important;
+        left: 1px !important;
+    }
+
+    .coin_pool {
+        width: 15%;
+    }
+
+    .hand {
+        visibility: hidden;
+        cursor: none;
+        right: -30vw;
+    }
+
+    .coinThrow, .coin_asia_throw {
+        visibility: visible;
+        transform: scale(1.4);
+    }
+
+    .wishingPool .onlyWishingPool,
+    .wishingPool .onlyWishingPool_front {
+        top: 36vh;
+        left: 5vw;
+        width: 40vw;
+    }
+
+    .wishingPool .onlyWishingPool img,
+    .wishingPool .onlyWishingPool_front img {
+        width: 230%;
+    }
+
+    .wishingPool_female,
+    .wishingPool_man {
+        display: none;
+    }
+
+    .wishingPool .makewishPopup:hover:before,
+    .wishingPool .achWishPopup:hover:before,
+    .wishingPool .manaWish:hover:before,
+    .wishingPool .box:hover:before {
+        display: none;
+    }
+}
+
+/*========768px ~ 1199px setting==========*/
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .wishingPool .container-fluid {
+        background: url("../img/wishingPool_rwd768.svg") no-repeat center center/cover;
+        position: relative;
+    }
+
+    .wishingPool .wishingOrder h2, .wishingPool .achieveWish h2 {
+        padding-top: 2vh;
+        font-size: 2vw;
+    }
+
+    .wishingPool .box {
+        margin: 13vh 8vw 0 0vw;
+    }
+
+    .wishingPool .box .item_all p {
+        font-size: 1.5vw;
+    }
+
+    .wishingPool .box .item p {
+        font-size: 1.5vw;
+    }
+
+    .wishingPool .box .item_all .circle {
+        height: 2vw;
+        width: 2vw;
+    }
+
+    .wishingPool .wish_list {
+        width: 40%;
+        position: absolute;
+        margin: 0;
+        top: 16vw;
+        right: 3vw;
+    }
+
+    .wishingPool .wish_list a {
+        font-size: 2vw;
+    }
+
+    .wishingPool .type_boxup label, .type_boxdown label,
+    .wishingPool .wishingOrder .place,
+    .wishingPool .wishingOrder .type,
+    .wishingPool .wishingOrder .message,
+    .wishingPool .achieveWish .place,
+    .wishingPool .achieveWish .message,
+    .wishingPool .wishingOrder a.button,
+    .wishingPool .achieveWish a.button,
+    .wishingPool .achDate a.button,
+    .wishingPool .report a.button,
+    .wishingPool .type_boxup a, .type_boxdown a,
+    .wishingPool .achieveWish .type,
+    .wishingPool .report .reportSelect {
+        font-size: 2vw;
+    }
+
+    .wishingPool .achieveWish a.reportButton {
+        font-size: 1.7vw;
+    }
+
+    .wishingPool .wishingOrder,
+    .wishingPool .achieveWish {
+        width: 60%;
+        top: 10vh;
+        left: 20vw;
+        margin: auto;
+    }
+
+    .wishingPool .achDate,
+    .wishingPool .report {
+        width: 50%;
+        top: 35vh;
+        height: 20vh;
+        left: 25vw;
+        margin: auto;
+    }
+
+    .wishingPool .achDate p {
+        width: 17vw;
+        text-align: right;
+        font-size: 2vw;
+    }
+
+    .wishingPool label.control {
+        font-size: 2vw;
+        padding-top: 1%;
+        margin-left: 5%;
+    }
+
+    .wishingPool_female,
+    .wishingPool_man {
+        display: none;
+    }
+
+    .coin_pool {
+        width: 8%;
+    }
+
+    .hand {
+        display: none;
+    }
+
+    .wishingPool .onlyWishingPool {
+        top: 35vh;
+        left: 23vw;
+        width: 60vw;
+    }
+
+    .wishingPool .onlyWishingPool_front {
+        top: 35vh;
+        left: 23vw;
+        width: 60vw;
+    }
+}
+
+/*========1200px ~ 1440px setting==========*/
+@media screen and (min-width: 1200px) and (max-width: 1440px) {
+    .wishingPool .container-fluid {
+        background: url("../img/wishingPool.svg") no-repeat center center/cover;
+    }
+
+    .wish_list {
+        margin-top: 50%;
+    }
+
+    .wishingPool .box {
+        margin: 13vh 2vw 0 0vw;
+    }
+
+    .wishingPool .achieveWish .message {
+        margin-top: 2%;
+    }
+
+    .onlyWishingPool {
+        top: 25vh;
+    }
+
+    .hand {
+        top: 45vw;
+    }
+
+    .wishingPool .onlyWishingPool,
+    .wishingPool .onlyWishingPool_front {
+        top: 25vh;
+    }
+}
+
+/*========2560px setting==========*/
+@media screen and (min-width: 2560px) {
+    .wishingPool .container-fluid {
+        background: url("../img/wishingPool_rwd2560.svg") no-repeat center center/cover;
+    }
+
+    .wish_list {
+        width: 100%;
+        margin-left: 3vw;
+    }
+
+    .wishingPool .wishingOrder,
+    .wishingPool .achieveWish {
+        top: 10vh;
+    }
+
+    .coin_pool {
+        width: 5.5%;
+    }
+}
