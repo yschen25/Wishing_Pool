@@ -12,7 +12,7 @@ window.addEventListener("load", function () {
                 var arr = xhr.responseText.split(",");
                 if (xhr.responseText != "not") { //already login
                     $id("nickNameInfo").innerHTML = arr[0];
-                    $id("loginImg").src = "img/member/" + arr[2];
+                    $id("loginImg").src = "img/member/" + arr[1];
                     $id("member").style.display = "inline";
                 }
             } else {

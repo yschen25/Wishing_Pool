@@ -28,7 +28,6 @@ function doLogin($memId, $memPsw){
                 $planRow = $planner->fetch();
                 $_SESSION["plannerNo"] = $planRow["plannerNo"];
             }
-
         } else {
             echo "error";
         }
