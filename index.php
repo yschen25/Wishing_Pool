@@ -110,11 +110,9 @@ doLogin('rick', '111');
                         <div class="wish">
                             <a id="aaa" class="makewishPopup" href="javascript:void(0);">許下願望</a>
                         </div>
-
                         <div class="wish">
                             <a class="achWishPopup" id="achWishPopup" href="javascript:void(0);">撿拾願望</a>
                         </div>
-
                         <div class="wish">
                             <a class="manaWish" href="https://github.com/yschen25" target="_blank">管理願望</a>
                         </div>
@@ -133,7 +131,7 @@ doLogin('rick', '111');
                 <div class="place_box">
                     <select class="place region" id="region" name="region">
                         <option id="regionValue" value="<?php
-                        if (isset($_REQUEST["region"])) {echo $_REQUEST["region"];} ?>" disabled selected>請選擇區域
+                            if (isset($_REQUEST["region"])) {echo $_REQUEST["region"];} ?>" disabled selected>請選擇區域
                         </option>
                         <option value="1">亞洲</option>
                         <option value="2">歐洲</option>
@@ -158,32 +156,22 @@ doLogin('rick', '111');
                     <label class="aColor" id="label6" for="cate_7">宗教</label>
                     <label class="aColor" id="label7" for="cate_8">放鬆</label>
 
-                    <input type="checkbox" class="category" name="category" value="1" id="cate_1"
-                           style="display: none;">
-                    <input type="checkbox" class="category" name="category" value="2" id="cate_2"
-                           style="display: none;">
-                    <input type="checkbox" class="category" name="category" value="3" id="cate_3"
-                           style="display: none;">
-                    <input type="checkbox" class="category" name="category" value="4" id="cate_4"
-                           style="display: none;">
-                    <input type="checkbox" class="category" name="category" value="5" id="cate_5"
-                           style="display: none;">
-                    <input type="checkbox" class="category" name="category" value="6" id="cate_6"
-                           style="display: none;">
-                    <input type="checkbox" class="category" name="category" value="7" id="cate_7"
-                           style="display: none;">
-                    <input type="checkbox" class="category" name="category" value="8" id="cate_8"
-                           style="display: none;">
+                    <input type="checkbox" class="category" name="category" value="1" id="cate_1" style="display: none;">
+                    <input type="checkbox" class="category" name="category" value="2" id="cate_2" style="display: none;">
+                    <input type="checkbox" class="category" name="category" value="3" id="cate_3" style="display: none;">
+                    <input type="checkbox" class="category" name="category" value="4" id="cate_4" style="display: none;">
+                    <input type="checkbox" class="category" name="category" value="5" id="cate_5" style="display: none;">
+                    <input type="checkbox" class="category" name="category" value="6" id="cate_6" style="display: none;">
+                    <input type="checkbox" class="category" name="category" value="7" id="cate_7" style="display: none;">
+                    <input type="checkbox" class="category" name="category" value="8" id="cate_8" style="display: none;">
                 </div>
                 <div class="clearfix"></div>
                 <div class="type_box">
-                    <input placeholder="開始日期" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"
-                           id="date" name="date" class="type">
+                    <input placeholder="開始日期" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date" name="date" class="type">
                     <input type="number" id="day" name="day" min="1" class="type date day" placeholder="天數">
                     <input type="number" id="money" name="money" min="50" class="type date money" placeholder="預算">
                     <div class="clearfix"></div>
-                    <input type="number" id="people" name="people" min="1" class="type number"
-                           placeholder="填寫完人數後可選類型喔">
+                    <input type="number" id="people" name="people" min="1" class="type number" placeholder="填寫完人數後可選類型喔">
                     <div class="member-group">
                         <label class="control member_checkbox" for="memType1">小孩
                             <input type="checkbox" name="memberType" id="memType1" value="1">
@@ -206,8 +194,7 @@ doLogin('rick', '111');
                 </div>
                 <textarea id="message" name="message" maxlength="100" class="message" placeholder="許下你的願望.."></textarea>
                 <?php $memIdMake = isset($_SESSION['memId']); ?>
-                <a class="button" id="makewish_button"
-                   title="<?php echo $memIdMake == null ? 1 : $_SESSION['memId']; ?>">送出願望</a>
+                <a class="button" id="makewish_button" title="<?php echo $memIdMake == null ? 1 : $_SESSION['memId']; ?>">送出願望</a>
                 <a class="button cancel">取消</a>
                 <div class="clearfix"></div>
             </div>
@@ -222,66 +209,55 @@ doLogin('rick', '111');
         $wishes = $pdo->query($sql);
         while ($wishRow = $wishes->fetch(PDO::FETCH_ASSOC)){
     ?>
-    <form method="post" id="achieveWish">
-        <div class="col-xs-12 col-sm-6 col-lg-4">
-            <div class="achieveWish hide">
-                <a class="reportButton">檢舉</a>
-                <h2>撿拾願望</h2>
-                <div class="place_box">
-                    <input type="hidden" id="aw_wishno" name="wishNo" value="<?php echo $wishRow["wishNo"]; ?>">
-                    <input type="text" id="aw_region" name="region" class="place region" value="<?php echo $wishRow["w_area"]; ?>">
-                    <input type="text" id="aw_city" name="city" class="place city" value="<?php echo $wishRow["cityName"]; ?>">
+        <form method="post" id="achieveWish">
+            <div class="col-xs-12 col-sm-6 col-lg-4">
+                <div class="achieveWish hide">
+                    <a class="reportButton">檢舉</a>
+                    <h2>撿拾願望</h2>
+                    <div class="place_box">
+                        <input type="hidden" id="aw_wishno" name="wishNo" value="<?php echo $wishRow["wishNo"]; ?>">
+                        <input type="text" id="aw_region" name="region" class="place region" value="<?php echo $wishRow["w_area"]; ?>">
+                        <input type="text" id="aw_city" name="city" class="place city" value="<?php echo $wishRow["cityName"]; ?>">
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="type_boxup">
+                        <a class="aColor" id="label_21">展演</a>
+                        <a class="aColor" id="label_22">吃貨</a>
+                        <a class="aColor" id="label_23">購物</a>
+                        <a class="aColor" id="label_24">景點</a>
+                    </div>
                     <div class="clearfix"></div>
-                </div>
-                <div class="type_boxup">
-                    <a class="aColor" id="label_21">展演</a>
-                    <a class="aColor" id="label_22">吃貨</a>
-                    <a class="aColor" id="label_23">購物</a>
-                    <a class="aColor" id="label_24">景點</a>
-                </div>
-                <div class="clearfix"></div>
-                <div class="type_boxdown">
-                    <a class="aColor" id="label_25">文化</a>
-                    <a class="aColor" id="label_26">冒險</a>
-                    <a class="aColor" id="label_27">宗教</a>
-                    <a class="aColor" id="label_28">放鬆</a>
-                    <input type="checkbox" class="category" name="category[]" value="1" style="display: none;">
-                    <input type="checkbox" class="category" name="category[]" value="2" style="display: none;">
-                    <input type="checkbox" class="category" name="category[]" value="3" style="display: none;">
-                    <input type="checkbox" class="category" name="category[]" value="4" style="display: none;">
-                    <input type="checkbox" class="category" name="category[]" value="5" style="display: none;">
-                    <input type="checkbox" class="category" name="category[]" value="6" style="display: none;">
-                    <input type="checkbox" class="category" name="category[]" value="7" style="display: none;">
-                    <input type="checkbox" class="category" name="category[]" value="8" style="display: none;">
-                </div>
-                <div class="clearfix"></div>
-                <div class="type_box">
-                    <input type="text" id="aw_date" name="date" class="type" value="<?php echo $wishRow["w_date"]; ?>">
-                    <input type="text" id="aw_day" name="date" class="type date" value="<?php echo $wishRow["w_day"];
-                    echo ' 天'; ?>">
-                    <input type="text" id="aw_money" name="money" class="type date"
-                           value="<?php echo $wishRow["w_budget"];
-                           echo ' 元'; ?>">
+                    <div class="type_boxdown">
+                        <a class="aColor" id="label_25">文化</a>
+                        <a class="aColor" id="label_26">冒險</a>
+                        <a class="aColor" id="label_27">宗教</a>
+                        <a class="aColor" id="label_28">放鬆</a>
+                        <input type="checkbox" class="category" name="category[]" value="1" style="display: none;">
+                        <input type="checkbox" class="category" name="category[]" value="2" style="display: none;">
+                        <input type="checkbox" class="category" name="category[]" value="3" style="display: none;">
+                        <input type="checkbox" class="category" name="category[]" value="4" style="display: none;">
+                        <input type="checkbox" class="category" name="category[]" value="5" style="display: none;">
+                        <input type="checkbox" class="category" name="category[]" value="6" style="display: none;">
+                        <input type="checkbox" class="category" name="category[]" value="7" style="display: none;">
+                        <input type="checkbox" class="category" name="category[]" value="8" style="display: none;">
+                    </div>
                     <div class="clearfix"></div>
-                    <input type="text" id="aw_people" name="people" class="type date number"
-                           value="<?php echo $wishRow["w_peopleNum"];
-                           echo ' 人'; ?>">
-                </div>
-                <textarea type="text" id="aw_remarks" name="message"
-                          class="message"><?php echo $wishRow["w_remarks"]; ?></textarea>
-                <a class="button signUp">實現願望</a>
-                <a id="random" class="button cancel">放棄</a>
+                    <div class="type_box">
+                        <input type="text" id="aw_date" name="date" class="type" value="<?php echo $wishRow["w_date"]; ?>">
+                        <input type="text" id="aw_day" name="date" class="type date" value="<?php echo $wishRow["w_day"]; echo ' 天'; ?>">
+                        <input type="text" id="aw_money" name="money" class="type date" value="<?php echo $wishRow["w_budget"]; echo ' 元'; ?>">
+                        <div class="clearfix"></div>
+                        <input type="text" id="aw_people" name="people" class="type date number" value="<?php echo $wishRow["w_peopleNum"]; echo ' 人'; ?>">
+                    </div>
+                    <textarea type="text" id="aw_remarks" name="message"
+                              class="message"><?php echo $wishRow["w_remarks"]; ?></textarea>
+                    <a class="button signUp">實現願望</a>
+                    <a id="random" class="button cancel">放棄</a>
 
-                <div class="clearfix"></div>
+                    <div class="clearfix"></div>
+                </div>
             </div>
-        </div>
-    </form>
-
-    <!-- ===============Female============= -->
-    <div class="wishingPool_female"></div>
-
-    <!-- ===============Female============= -->
-    <div class="wishingPool_man"></div>
+        </form>
     <?php
 
         $dbCategory = $wishRow["category"];
@@ -296,7 +272,6 @@ doLogin('rick', '111');
         }
     ?>
     <script>
-
         var Cate = "<?php echo $dbCategory; ?>";
         var Cate_array = Cate.split(',');
         for (var i = 0; i < Cate_array.length; i++) {
@@ -309,8 +284,13 @@ doLogin('rick', '111');
         for (var i = 0; i < Mem_array.length; i++) {
             $('#label3' + Mem_array[i]).addClass('ggg');
         }
-
     </script>
+
+    <!-- ===============Female============= -->
+    <div class="wishingPool_female"></div>
+
+    <!-- ===============Female============= -->
+    <div class="wishingPool_man"></div>
 
     <!-- ===============Date Popup============= -->
     <form id="saveDate">
@@ -359,5 +339,6 @@ doLogin('rick', '111');
         </div>
     </div>
 </div>
+
 </body>
 </html>

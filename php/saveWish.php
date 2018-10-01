@@ -1,9 +1,9 @@
 <?php
+require_once("connectBooks.php");
 ob_start();
 session_start();
 
 try {
-    require_once("connectBooks.php");
     $sql = "insert into wishing_pool(wishNo, memberNo, w_area, w_date, w_day, w_peopleNum, w_member, w_budget, w_remarks, cityName, category, w_endday)values(null, :memberNo, :w_area, :w_date, :w_day, :w_peopleNum, :w_member, :w_budget, :w_remarks, :cityName, :category, :w_endday)";
 
     // Save the category and memberType to string

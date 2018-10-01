@@ -1,9 +1,9 @@
 <?php
+require_once("connectBooks.php");
 ob_start();
 session_start();
 
 try {
-    require_once("connectBooks.php");
     $sql = "insert into apply(applyNo, wishNo, plannerNo, w_status, e_timeLimit) values(null, :wishNo, :plannerNo, :w_status, :e_timeLimit)";
     $wish = $pdo->prepare($sql);
     $wish->bindValue(":plannerNo", $_SESSION["plannerNo"]);
