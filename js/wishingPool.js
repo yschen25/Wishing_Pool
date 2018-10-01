@@ -1,7 +1,29 @@
 $(function(){
 	// Remove 000webhost logo
 	$('[title="Hosted on free web hosting 000webhost.com. Host your own website for FREE."]').parent().remove();
-})
+
+
+// Check is login
+window.addEventListener("load", function () {
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState == 4) {
+            if (xhr.status == 200) {
+                var arr = xhr.responseText.split(",");
+                if (xhr.responseText != "not") { //already login
+                    $id("nickNameInfo").innerHTML = arr[0];
+                    $id("loginImg").src = "img/member/" + arr[2];
+                    $id("member").style.display = "inline";
+                }
+            } else {
+                console.log(xhr.status);
+            }
+        }
+    };
+    var url = "php/isLogin.php";
+    xhr.open("get", url, true);
+    xhr.send(null);
+}, true);
 
 //Change the coin's brightness when click the all button 
 $(".item_all .circle").click(function(){
@@ -916,7 +938,7 @@ function coinGenerate(){
 
         $.ajax({
 	    type: "POST",
-	    url: "php/getAreaNo.php",
+	    url: "php/getWish.php",
 	    data: { _getArea: randomCoin},
 	    dataType: "json", // Set the data type so jQuery can parse it for you
 	    success: function (data) {
@@ -982,3 +1004,5 @@ function updateCoin(){
 $( window ).resize(function() {
   updateCoin();
 });
+
+})

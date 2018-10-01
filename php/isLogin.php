@@ -13,18 +13,15 @@ if (isset($_SESSION["nickName"]) === true) {
         if ($member->rowCount() != 0) {
             $memRow = $member->fetch();
             $memberNo = $memRow["memberNo"];
-            echo $memRow["nickName"];
-            echo ",", $memRow["m_nowBonus"], "&nbsp點";
-            echo ",", $memRow["m_pic"];
             $_SESSION["memberNo"] = $memRow["memberNo"];
             $_SESSION["nickName"] = $memRow["nickName"];
             $_SESSION["memId"] = $memRow["memId"];
             $_SESSION["memPsw"] = $memRow["memPsw"];
             $_SESSION["sexuality"] = $memRow["sexuality"];
             $_SESSION["pic"] = $memRow["m_pic"];
-            $_SESSION["bonus"] = $memRow["m_nowBonus"];
+
             // 確認是否同時為規畫師
-            $sqlPlan = "select * from member,planner where  member.memberNo = planner.memberNo and member.memberNo = $memberNo";
+            $sqlPlan = "select * from member, planner where member.memberNo = planner.memberNo and member.memberNo = $memberNo";
             $planner = $pdo->prepare($sqlPlan);
             $planner->execute();
             if ($planner->rowCount() != 0) {

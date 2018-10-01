@@ -4,7 +4,7 @@ session_start();
 
 try {
     require_once("connectBooks.php");
-    $sql = "insert into wishingPool_report(wishReNo, memberNo, wishNo, wp_info)values(null, :memberNo, :wishNo,:wp_info)";
+    $sql = "insert into report(wishReNo, memberNo, wishNo, wp_info)values(null, :memberNo, :wishNo,:wp_info)";
     $wish = $pdo->prepare($sql);
     $wish->bindValue(":memberNo", $_SESSION['memberNo']);
     $wish->bindValue(":wishNo", $_SESSION["wishNo"]);

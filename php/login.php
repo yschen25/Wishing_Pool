@@ -20,7 +20,7 @@ function doLogin($memId, $memPsw){
             $_SESSION["pic"] = $memRow["m_pic"];
 
             // 確認是否同時為規劃師
-            $sqlPlan = "select * from member,planner where  member.memberNo = planner.memberNo and member.memberNo = $memberNo";
+            $sqlPlan = "select * from member, planner where member.memberNo = planner.memberNo and member.memberNo = $memberNo";
             $planner = $pdo->prepare($sqlPlan);
             $planner->execute();
 

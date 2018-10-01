@@ -1,3 +1,171 @@
+body {
+    overflow: hidden;
+}
+
+/*============Header=============*/
+header {
+    width: 100%;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    background-color: #45B39D;
+}
+
+header li{
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Noto Sans TC';
+    color: #f9f9f9;
+    font-weight: 400;
+}
+
+.logoimg a {
+    display: block;
+    margin: auto;
+}
+
+.logoimg img {
+    display: inline-block;
+}
+
+header {
+    height: 80px;
+}
+
+header a {
+    font-size: 24px;
+}
+
+.logoimg {
+    max-height: 80px;
+    line-height: 110px;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.logoimg img {
+    width: auto;
+    max-height: 80px;
+}
+
+.logoimg a {
+    max-height: 80px;
+    margin-left: 15px;
+}
+
+.header-mainMenu {
+    text-align: center;
+    display: inline-block;
+    height: 80px;
+    line-height: 80px;
+}
+
+.header-mainMenu li {
+    display: inline-block;
+    transition: .3s;
+}
+
+.header-mainMenu li {
+    margin: 0 1vw;
+    position: relative;
+    padding: .3vw;
+}
+
+.header-timesMenu {
+    text-align: right;
+    display: inline-block;
+    height: 80px;
+    line-height: 80px;
+    float: right;
+    width: 50%;
+}
+
+.header-timesMenu li {
+    display: inline-block;
+    transition: .3s;
+}
+
+.header-timesMenu a {
+    margin: 0 10px;
+    position: relative;
+}
+
+.header-timesMenu #memName {
+    font-size: 2rem;
+}
+
+.header-timesMenu a img {
+    display: inline-block;
+    max-width: 26px;
+    border-radius: 50%;
+    height: auto;
+    vertical-align: sub;
+}
+
+/*xs = 手機以下*/
+@media screen and (max-width: 767px) {
+
+    header {
+        height: 65px;
+        z-index: 6;
+        transition: .5s;
+    }
+
+    header a {
+        font-size: 6vw;
+    }
+
+    .logoimg {
+        max-height: 65px;
+        line-height: 98px;
+        text-align: left;
+    }
+
+    .logoimg img {
+        width: auto;
+        max-height: 65px;
+    }
+
+    .logoimg a {
+        max-height: 65px;
+    }
+
+    .header-menuBar {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    header {
+        height: 65px;
+        z-index: 6;
+        transition: .5s;
+    }
+
+    header a {
+        font-size: 4vw;
+    }
+
+    .logoimg {
+        height: 65px;
+        line-height: 98px;
+        text-align: left;
+    }
+
+    .logoimg a {
+        max-height: 65px;
+        margin-left: 15px;
+    }
+
+    .logoimg img {
+        width: auto;
+        max-height: 65px
+    }
+}
+
+/*=========Wishing pool==========*/
 .wishingPool {
     position: relative;
 }

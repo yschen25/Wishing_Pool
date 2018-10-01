@@ -1,12 +1,10 @@
 <?php
 try {
     require_once("connectBooks.php");
-    $sql = "select * from wish where w_area = :w_area order by rand() limit 1";
+    $sql = "select * from wishing_pool where w_area = :w_area order by rand() limit 1";
     $wishes = $pdo->prepare($sql);
-
     $wishes->bindValue(":w_area", $_REQUEST["_getArea"]);
     $wishes->execute();
-
     $wishRow = $wishes->fetch(PDO::FETCH_ASSOC);
 
     $arr = array();
