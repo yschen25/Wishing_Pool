@@ -222,7 +222,7 @@ $(function () {
 	var wishingOrder_ani, hand_ani, coin_ani;
 	function transformToCoin() {
 
-	    $(".container-fluid, .onlyWishingPool, .wishingPool_female, .wishingPool_man, .coin_pool").toggleClass("coinChange");
+	    $("header, .container-fluid, .onlyWishingPool, .wishingPool_female, .wishingPool_man, .coin_pool").toggleClass("coinChange");
 	    coin_bright();
 
 	    wishingOrder_ani = anime({
@@ -253,22 +253,24 @@ $(function () {
 	}
 
 	function arc() {
-	    var coin_position = $('.coinThrow').offset();
-	    var offset_ = randomCoords($('#coinId_' + 1));
-	    var p0 = {x: coin_position.left, y: coin_position.top},
-	        p1 = p2 = {x: (offset_[0] + coin_position.left) / 2, y: offset_[1] - 0.4 * $('.onlyWishingPool').height()},
-	        p3 = {x: offset_[0], y: offset_[1]};
-	    var steps = 100;
-	    var array_x = array_y = [];
+	    let coin_position = $('.coinThrow').offset();
+		var offset_ = randomCoords($('#coinId_'+1));
+		let p0 = {x: coin_position.left, y: coin_position.top}, 
+		p1 = p2 = {x:(offset_[0]+coin_position.left)/2, y:offset_[1]-0.4*$('.onlyWishingPool').height()}, 
+		p3 = {x: offset_[0], y: offset_[1]};
+		var steps = 100;
+		var array_x=[], array_y=[];
 
-	    for (i = 0; i <= 1; i += 0.01) {
-	        var output = bezier(i, p0, p1, p2, p3);
-	        array_x.push({value: output.x});
-	        array_y.push({value: output.y});
-	    }
+		for(i = 0; i <= 1; i += 0.01){
+			var output = bezier(i, p0, p1, p2, p3);
+			array_x.push({value:output.x});
+			array_y.push({value:output.y});
+		}
 
-	    var scale_temp = 0.4;
-	    if (window.innerWidth <= 425) scale_temp = 0.8;
+		let scale_temp = 0.4;
+		if(window.innerWidth<=425){
+			scale_temp =0.8
+		}
 
 	    anime({
 		        targets: '.coinThrow',
@@ -306,7 +308,7 @@ $(function () {
 		                    $("header, .container-fluid, .onlyWishingPool, .wishingPool_female, .wishingPool_man, .coin_pool").toggleClass("coinChange");
 		                    $(".achWishPopup, .makewishPopup, .manaWish, .item_all p, .item img, .item_all .circle, .coinBox").addClass("disable");
 
-		                    var data = coin_info[$(this).attr('id')];
+		                    let data = coin_info[$(this).attr('id')];
 
 		                    if (data[2] == '1') $("#aw_region").val('亞洲');
 		                    else if (data[2] == '2') $("#aw_region").val('歐洲');
@@ -333,7 +335,7 @@ $(function () {
 		            // Refreash page
 		            setTimeout(function () {
 		                window.location.reload();
-		            }, 1000)
+		            }, 1100)
 		        }
 	    });
 	}

@@ -45,4 +45,5 @@
          * Enable to see the wish that just make
          * Dimmering header when popup
          * Adding more wishes to display
+         * Fixing select style in Firefox
 <br/>

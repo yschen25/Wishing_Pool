@@ -343,6 +343,9 @@ header {
 .wishingPool .wishingOrder .place.region {
     color: #333333;
     -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
     background: url(../img/br_down.png) no-repeat 95% #ddd;
     background-size: 8%;
 }
@@ -791,6 +794,9 @@ label.control.member_checkbox {
     margin: auto;
     color: #333333;
     -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
     background: url(../img/br_down.png) no-repeat 95% #ddd;
     background-size: 5%;
 }
