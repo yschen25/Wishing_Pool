@@ -25,24 +25,20 @@ doLogin('rick', '111');
 <body>
 
 <header>
-    <div class="logoimg col-xs-6 col-sm-6 col-lg-6">
-        <a href="javascript:void(0);">
-            <img src="img/logo.svg">
-        </a>
+    <div class="logoimg col-xs-6 col-sm-4 col-lg-4">
+        <img src="img/logo.svg">
     </div>
-    <nav class="header-menuBar col-sm-6 col-lg-6">
-        <ul class="header-mainMenu">
-            <li>許願池</li>
+    <div class="headerRight headerTitle col-sm-4 col-lg-4">
+        <span>許願池</span>
+    </div>
+    <div class="headerRight headerLogin col-sm-4 col-lg-4">
+        <ul>
+            <li id="imgBox">
+                <img id="loginImg">
+            </li>
+            <li id="nickNameInfo"></li>
         </ul>
-        <ul class="header-timesMenu">
-            <a id="member" href="javascript:void(0);">
-                <li id="imgBox">
-                    <img id="loginImg">
-                </li>
-                <li id="nickNameInfo"></li>
-            </a>
-        </ul>
-    </nav>
+    </div>
     <div class="clear"></div>
 </header>
 
@@ -64,7 +60,7 @@ doLogin('rick', '111');
             <!-- =============Coin type================ -->
             <div class="col-xs-12 col-sm-6 col-lg-5">
                 <div class="row">
-                    <div class="box">
+                    <div class="box coinBox">
                         <div class="item_all">
                             <div class="circle circleDefault"></div>
                             <p class="circlePDefault">選擇全部洲別</p>
@@ -249,11 +245,9 @@ doLogin('rick', '111');
                         <div class="clearfix"></div>
                         <input type="text" id="aw_people" name="people" class="type date number" value="<?php echo $wishRow["w_peopleNum"]; echo ' 人'; ?>">
                     </div>
-                    <textarea type="text" id="aw_remarks" name="message"
-                              class="message"><?php echo $wishRow["w_remarks"]; ?></textarea>
+                    <textarea type="text" id="aw_remarks" name="message" class="message"><?php echo $wishRow["w_remarks"]; ?></textarea>
                     <a class="button signUp">實現願望</a>
                     <a id="random" class="button cancel">放棄</a>
-
                     <div class="clearfix"></div>
                 </div>
             </div>

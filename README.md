@@ -34,4 +34,15 @@
          * Optimizing PHP to prevent sending null wish popup value
          * Optimizing SQL
          * Revising and integrating PHP
+
+* **2018.10.02**
+         
+         * Fixing header RWD
+         * Revising Js to remove logincheck.php
+         * disabled coin button hover when popup
+         * Revising and integrating JS
+         * Revising and integrating HTML, CSS
+         * Enable to see the wish that just make
+         * Dimmering header when popup
+         * Adding more wishes to display
 <br/>

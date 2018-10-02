@@ -5,163 +5,61 @@ body {
 /*============Header=============*/
 header {
     width: 100%;
-    z-index: 999;
-    position: fixed;
-    top: 0;
+    height: 70px;
     background-color: #45B39D;
-}
-
-header li{
-    text-decoration: none;
-    color: #fff;
-    font-size: 24px;
-    font-family: 'Noto Sans TC';
-    color: #f9f9f9;
-    font-weight: 400;
-}
-
-.logoimg a {
-    display: block;
-    margin: auto;
-}
-
-.logoimg img {
-    display: inline-block;
-}
-
-header {
-    height: 80px;
-}
-
-header a {
-    font-size: 24px;
+    font-size: 1.5rem;
+    position: fixed;
+    z-index: 6;
+    top: 0;
 }
 
 .logoimg {
-    max-height: 80px;
-    line-height: 110px;
+    line-height: 106px;
     text-align: left;
     box-sizing: border-box;
 }
 
 .logoimg img {
     width: auto;
+    display: inline-block;
     max-height: 80px;
 }
 
-.logoimg a {
-    max-height: 80px;
-    margin-left: 15px;
-}
-
-.header-mainMenu {
+.headerTitle {
     text-align: center;
     display: inline-block;
     height: 80px;
-    line-height: 80px;
+    line-height: 70px;
+    color: #f9f9f9;
 }
 
-.header-mainMenu li {
-    display: inline-block;
-    transition: .3s;
-}
-
-.header-mainMenu li {
-    margin: 0 1vw;
-    position: relative;
-    padding: .3vw;
-}
-
-.header-timesMenu {
+.headerLogin {
     text-align: right;
     display: inline-block;
     height: 80px;
-    line-height: 80px;
+    line-height: 70px;
     float: right;
-    width: 50%;
+    margin-right: .5%;
+    transform: translateY(-100%);
 }
 
-.header-timesMenu li {
+.headerLogin li {
     display: inline-block;
-    transition: .3s;
+    font-family: 'Noto Sans TC';
+    color: #f9f9f9;
 }
 
-.header-timesMenu a {
-    margin: 0 10px;
-    position: relative;
-}
-
-.header-timesMenu #memName {
-    font-size: 2rem;
-}
-
-.header-timesMenu a img {
-    display: inline-block;
-    max-width: 26px;
+.headerLogin img {
+    max-width: 20%;
     border-radius: 50%;
-    height: auto;
-    vertical-align: sub;
+    vertical-align: text-top;
 }
 
 /*xs = 手機以下*/
 @media screen and (max-width: 767px) {
 
-    header {
-        height: 65px;
-        z-index: 6;
-        transition: .5s;
-    }
-
-    header a {
-        font-size: 6vw;
-    }
-
-    .logoimg {
-        max-height: 65px;
-        line-height: 98px;
-        text-align: left;
-    }
-
-    .logoimg img {
-        width: auto;
-        max-height: 65px;
-    }
-
-    .logoimg a {
-        max-height: 65px;
-    }
-
-    .header-menuBar {
+    .headerRight {
         display: none;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1199px) {
-
-    header {
-        height: 65px;
-        z-index: 6;
-        transition: .5s;
-    }
-
-    header a {
-        font-size: 4vw;
-    }
-
-    .logoimg {
-        height: 65px;
-        line-height: 98px;
-        text-align: left;
-    }
-
-    .logoimg a {
-        max-height: 65px;
-        margin-left: 15px;
-    }
-
-    .logoimg img {
-        width: auto;
-        max-height: 65px
     }
 }
 
@@ -777,39 +675,17 @@ label.control.member_checkbox {
 }
 
 @keyframes shake {
-    0% {
-        transform: translate(2px, 1px) rotate(0deg);
-    }
-    10% {
-        transform: translate(-1px, -2px) rotate(-1deg);
-    }
-    20% {
-        transform: translate(-3px, 0px) rotate(1deg);
-    }
-    30% {
-        transform: translate(0px, 2px) rotate(0deg);
-    }
-    40% {
-        transform: translate(1px, -1px) rotate(1deg);
-    }
-    50% {
-        transform: translate(-1px, 2px) rotate(-1deg);
-    }
-    60% {
-        transform: translate(-3px, 1px) rotate(0deg);
-    }
-    70% {
-        transform: translate(2px, 1px) rotate(-1deg);
-    }
-    80% {
-        transform: translate(-1px, -1px) rotate(1deg);
-    }
-    90% {
-        transform: translate(2px, 2px) rotate(0deg);
-    }
-    100% {
-        transform: translate(1px, -2px) rotate(-1deg);
-    }
+    0%   { transform: translate(2px, 1px) rotate(0deg); }
+    10%  { transform: translate(-1px, -2px) rotate(-1deg); }
+    20%  { transform: translate(-3px, 0px) rotate(1deg); }
+    30%  { transform: translate(0px, 2px) rotate(0deg); }
+    40%  { transform: translate(1px, -1px) rotate(1deg); }
+    50%  { transform: translate(-1px, 2px) rotate(-1deg); }
+    60%  { transform: translate(-3px, 1px) rotate(0deg); }
+    70%  { transform: translate(2px, 1px) rotate(-1deg); }
+    80%  { transform: translate(-1px, -1px) rotate(1deg); }
+    90%  { transform: translate(2px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
 /*===============Date Popup=============*/
@@ -1002,15 +878,9 @@ img.coin_asia_throw {
 }
 
 @keyframes coinFloat {
-    0% {
-        transform: scale(0.4) rotate(90deg) translate(0, 0px);
-    }
-    50% {
-        transform: scale(0.4) rotate(90deg) translate(50px, 0px);
-    }
-    100% {
-        transform: scale(0.4) rotate(90deg) translate(-2px, -0px);
-    }
+    0%   { transform: scale(0.4) rotate(90deg) translate(0, 0px); }
+    50%  { transform: scale(0.4) rotate(90deg) translate(50px, 0px); }
+    100% { transform: scale(0.4) rotate(90deg) translate(-2px, -0px); }
 }
 
 /*=======For HTML & JS to add class======*/
@@ -1066,12 +936,8 @@ img.coin_asia_throw {
 }
 
 @keyframes popAnimation {
-    from {
-        transform: scale(0);
-    }
-    to {
-        transform: scale(1);
-    }
+    from { transform: scale(0); }
+    to   { transform: scale(1); }
 }
 
 .disable {
