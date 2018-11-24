@@ -28,6 +28,12 @@ $(function () {
         xhr.send(null);
     }, true);
 
+    // Console style
+	var consoleStyle1 = "margin: 2px 10px; font-size: 20px;";
+	var consoleStyle2 = "font-size: 220px; background: url(https://i.imgur.com/1w7qsMY.png) no-repeat;";
+	console.log("%c In The Memory Of My Deepest Love Hamster", consoleStyle1);
+	console.log("%c Less Sugar (2016 - 2018.11.06)", consoleStyle1);
+	console.log("%c       ", consoleStyle2);
 
 // ==========================COIN AND POPUP=================================
 

@@ -12,6 +12,11 @@ doLogin('rick', '111');
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Yi-Shiuan Chen,yschen,yschen25,Ka,Ka Ka,陳翊萱,(https://github.com/yschen25)">
+    <meta name="keywords" content="html,css,rwd,javascript,jQuery,php,sql,database,db,ui,ux,design,photoshop,illustrator,svg,animation,wishing pool,make wish,fulfill wish,traveling,website building,website designing,許願池,許願,實現願望,旅遊,旅遊規劃">
+    <meta name="description" content="A wishing pool that you can see the wishes by click the coins in the pool, the different colors represent the different areas, the menu on the left side can help you select the area, and the coins every time you open the website will be random. Clicking make wish button that you can type where the area you want to go, time, wish content, etc., then click submit the sheet will transform to a coin and the color will be the area you just chose, then there will a hand appear to throw the coin into the wishing pool. Clicking fulfill wish which will show a wish sheet randomly, you can choose to fulfill the wish or report the improper contents. 一個可許願的許願池，可直接撿拾湖中的願望查看，而不同顏色的硬幣代表不同洲別，左上角的選單則可以讓你篩選現在想看的洲別，且每次頁面進來願望都為隨機的；按許下願望可以填寫想去旅遊的洲別、時間、願望內容等，且按照你所選洲別，表單會轉變成相對應顏色的硬幣並出現手將其拋進湖中；按撿拾願望則會則從池中隨機挑選一個願望，你可以選擇幫助實現，或是發現不當內容可檢舉。" />
+
     <link rel="stylesheet" type="text/css" href="css/cssreset.css">
     <link href="plugin/sweetalert2.min.css" rel="stylesheet" type="text/css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
