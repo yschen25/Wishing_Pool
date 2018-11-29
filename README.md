@@ -27,21 +27,21 @@ Clicking fulfill wish which will show a wish sheet randomly, you can choose to f
 
 1. A wishing pool that you can see the wishes by click the coins in the pool, the different colors represent the different areas, the menu on the left side can help you select the area, and the coins every time you open the website will be random 
 <p align="center">
-   <img src="https://i.imgur.com/mvOmdRx.gif" alt="wishing_pool" title="wishing_pool" width="85%">
+   <img src="https://i.imgur.com/mvOmdRx.gif" alt="wishing_pool" title="wishing_pool">
 </p>
 <br/>
 
 
 2. Clicking make wish button that you can type where the area you want to go, time, wish content, etc., then click submit the sheet will transform to a coin and the color will be the area you just chose, then there will a hand appear to throw the coin into the wishing pool
 <p align="center">
-   <img src="https://i.imgur.com/I0QaUMD.gif" alt="wishing_pool" title="wishing_pool" width="85%">
+   <img src="https://i.imgur.com/I0QaUMD.gif" alt="wishing_pool" title="wishing_pool">
 </p>
 <br/>
 
 
 3. Clicking fulfill wish which will show a wish sheet randomly, you can choose to fulfill the wish or report the improper contents 
 <p align="center">
-   <img src="https://i.imgur.com/c3G9EqY.gif" alt="wishing_pool" title="wishing_pool" width="85%">
+   <img src="https://i.imgur.com/c3G9EqY.gif" alt="wishing_pool" title="wishing_pool">
 </p>
 <br/>
 
