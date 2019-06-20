@@ -5,14 +5,14 @@ A wishing pool website, part of team project.
 
 ## Description
 
-<p>A wishing pool that you can see the wishes by click the coins in the pool, the different colors represent the different areas, the menu on the left side can help you select the area, and the coins every time you open the website will be random. 
+<p>A wishing pool that you can see the wishes by click the coins in the pool, the different colors represent the different areas, the menu on the left side can help you select the area, and the coins will be random every time you open the website. 
 
-Clicking make wish button that you can type where the area you want to go, time, wish content, etc., then click submit the sheet will transform to a coin and the color will be the area you just chose, then there will a hand appear to throw the coin into the wishing pool.
+Clicking make wish button that you can type where the area you want to go, what time you are available, what wish content do you have, etc., then click submit the sheet it will transform to a coin and which color will be the area you just chose, after that there will be a hand appear to throw the coin into the wishing pool.
         
 Clicking fulfill wish which will show a wish sheet randomly, you can choose to fulfill the wish or report the improper contents.</p>
 <br/>
 
-## Arthor
+## Author
 * **:octocat: Front-End && Back-End : [Me](https://github.com/yschen25)**
         
       HTML、CSS、JavaScript、jQuery、PHP、SQL、Photoshop、illustrator
@@ -25,14 +25,14 @@ Clicking fulfill wish which will show a wish sheet randomly, you can choose to f
 <img src="img/QR_Code.png" alt="wishing_pool" title="wishing_pool" width="20%">
 <br/>
 
-1. A wishing pool that you can see the wishes by click the coins in the pool, the different colors represent the different areas, the menu on the left side can help you select the area, and the coins every time you open the website will be random 
+1. A wishing pool that you can see the wishes by click the coins in the pool, the different colors represent the different areas, the menu on the left side can help you select the area, and the coins will be random every time you open the website  
 <p align="center">
    <img src="https://i.imgur.com/mvOmdRx.gif" alt="wishing_pool" title="wishing_pool">
 </p>
 <br/>
 
 
-2. Clicking make wish button that you can type where the area you want to go, time, wish content, etc., then click submit the sheet will transform to a coin and the color will be the area you just chose, then there will a hand appear to throw the coin into the wishing pool
+2. Clicking make wish button that you can type where the area you want to go, what time you are available, what wish content do you have, etc., then click submit the sheet it will transform to a coin and which color will be the area you just chose, after that there will be a hand appear to throw the coin into the wishing pool
 <p align="center">
    <img src="https://i.imgur.com/I0QaUMD.gif" alt="wishing_pool" title="wishing_pool">
 </p>
