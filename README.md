@@ -21,7 +21,7 @@ Clicking fulfill wish which will show a wish sheet randomly, you can choose to f
 
 ## Demo
 
-### **[WISHING POOL](http://www.yschen25.com/portfolio/wishingPool/) -> Where You Can See This Website**
+### **[WISHING POOL](https://www.yschen25.com/portfolio/wishingPool/) -> Where You Can See This Website**
 <img src="img/QR_Code.png" alt="wishing_pool" title="wishing_pool" width="20%">
 <br/>
 
